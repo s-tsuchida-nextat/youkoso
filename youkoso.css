@@ -1,0 +1,30 @@
+#p1 {
+    text-align: center;
+}
+
+#p2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 330px;
+    margin: 0 auto;
+  }
+  
+  .box1, .box2, .box3 {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 5px;
+    border: 1px solid rgb(170, 170, 170);
+    text-align: center;
+    position: relative;
+    right: 0px;
+  }
+
+  #p2{
+   color: brown;
+  }
