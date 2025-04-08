@@ -1,30 +1,105 @@
-#p1 {
-    text-align: center;
+/* ヘッダー */
+
+
+.header-box {
+  height: 80px;
 }
 
-#p2 {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos{
+display: flex;
+}
+
+.logo {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  line-height: 80px;
+  font-size: 20px;
+  font-weight: 600;
+  color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(0, 0, 0);
+}
+
+nav {
+  width: 70%;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+li {
+  width: 33%;
+}
+
+a {
+  display: block;
+  width: 100%;
+  line-height: 80px;
+  text-align: center;
+  color: blanchedalmond;
+}
+
+
+/*  */
+/*  */
+/* 本文 */
+
+.main{padding: 24px;}
+
+body{
+  background-color: #828282;
+}
+
+
+.p2 {
     text-align: center;
 }
 
 .container {
     display: flex;
-    width: 330px;
+    width: 100%;
     margin: 0 auto;
   }
+
+ .bun{
+  text-align: center;
+ }
   
-  .box1, .box2, .box3 {
+  .box{
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 33%;
+    aspect-ratio: 1/1;
+    line-height: 100px;
     background-color: lightblue;
-    margin: 5px;
+    margin: 2px;
     border: 1px solid rgb(170, 170, 170);
-    text-align: center;
+    justify-content: center;
     position: relative;
     right: 0px;
   }
 
-  #p2{
-   color: brown;
+  .box:hover{
+    background-color: rgb(99, 149, 165);
   }
+
