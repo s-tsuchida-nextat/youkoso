@@ -67,6 +67,8 @@
   
   .main{padding: 24px;}
   
+/* marquee{font-size: 50px;} */
+
   body{
     background-color: #a8a8a8;
   }
@@ -143,10 +145,11 @@
   
   .dora-moji{
     margin-left: 16px;
+    color: #3a3a3a;
   }
   
   .dora-name{
-    white-space: nowrap;
+    white-space: normal;
     font-size: 28px;
     font-weight: 800;
   }
@@ -154,13 +157,14 @@
   .dora-dis{
     /* width: 100%; */
     /* これで解決した!?!?!?!?!?!? */
-    font-size: 20px;
+    font-size: 14px;
     text-align: justify;
-    color: #3a3a3a;
+    
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
   }
   
   .left img{
-    width: 45%;
+    width: 40%;
     height: auto;
     margin: 8px 12px 8px 8px;
     max-width: 40vh;
@@ -179,6 +183,8 @@
     /* border-left: 0.1px solid whitesmoke; */
     overflow: auto;
     overflow-x: hidden;
+    color: #3a3a3a;
+    max-height: 100vh;
   }
   
   .profile{margin-left: 24px;
@@ -228,4 +234,10 @@
   }
   
   /* 以下footer */
-  .myname{text-align: center;}
+  .myname{text-align: center;
+color: #3a3a3a;
+}
+
+  .sitename{font-family: BIZ UDMincho;
+    color: #3a3a3a;
+font-size: 24px;}
