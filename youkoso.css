@@ -32,6 +32,7 @@ display: flex;
   color: bisque;
   font-family: Arial, Helvetica, sans-serif;
   background: rgb(0, 0, 0);
+  white-space: nowrap;
 }
 
 nav {
@@ -62,12 +63,12 @@ a {
 
 /*  */
 /*  */
-/* 本文 */
+/* ホバーズ */
 
 .main{padding: 24px;}
 
 body{
-  background-color: #828282;
+  background-color: #a8a8a8;
 }
 
 
@@ -81,12 +82,10 @@ body{
     margin: 0 auto;
   }
 
- .bun{
-  text-align: center;
- }
   
   .box{
     display: flex;
+    font-size: 20px;
     align-items: center;
     width: 33%;
     aspect-ratio: 1/1;
@@ -97,9 +96,80 @@ body{
     justify-content: center;
     position: relative;
     right: 0px;
+    white-space: nowrap;
   }
 
   .box:hover{
     background-color: rgb(99, 149, 165);
   }
+  
+  .box span:nth-child(1){
+    position:absolute;
+    display: none;
+  }
 
+  .box:hover span:nth-child(1){
+    display: inline-block;
+  }
+
+  .box:hover span:nth-child(2){
+    opacity: 0;
+  }
+
+/* ホバー終わり */
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: BIZ UDMincho;
+}
+
+.left{
+  flex: 1;
+  border-right: 0.1px solid rgba(208, 208, 208, 0.969);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* position: relative; */
+}
+
+.doras{
+  /* display: flex;これあったらそりゃ回り込まないよねえ！自分で気づけた嬉しい */
+  align-items: flex-start;
+}
+
+.dora-moji{
+  margin-left: 16px;
+}
+
+.dora-name{
+  white-space: nowrap;
+  font-size: 28px;
+}
+
+.dora-dis{
+  /* width: 100%; */
+  /* これで解決した!?!?!?!?!?!? */
+  font-size: 20px;
+}
+
+.left img{
+  width: 40%;
+  height: auto;
+  margin: 8px 12px 8px 8px;
+  max-width: 40vh;
+  max-height: 40wh;
+  object-fit: contain;
+  float: left;
+}
+
+
+
+/* ここから右 */
+
+
+.right{
+  flex: 1;
+  /* border-left: 0.1px solid whitesmoke; */
+}
