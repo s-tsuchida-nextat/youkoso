@@ -90,17 +90,18 @@ body{
     width: 33%;
     aspect-ratio: 1/1;
     line-height: 100px;
-    background-color: lightblue;
+    background-color: rgb(145, 198, 216);
     margin: 2px;
     border: 1px solid rgb(170, 170, 170);
     justify-content: center;
     position: relative;
     right: 0px;
     white-space: nowrap;
+    color: #FFFFFF;
   }
 
   .box:hover{
-    background-color: rgb(99, 149, 165);
+    background-color: rgb(206, 120, 120);
   }
   
   .box span:nth-child(1){
@@ -132,6 +133,7 @@ body{
   flex-direction: column;
   align-items: flex-start;
   /* position: relative; */
+  padding-right: 12px;
 }
 
 .doras{
@@ -146,16 +148,19 @@ body{
 .dora-name{
   white-space: nowrap;
   font-size: 28px;
+  font-weight: 800;
 }
 
 .dora-dis{
   /* width: 100%; */
   /* これで解決した!?!?!?!?!?!? */
   font-size: 20px;
+  text-align: justify;
+  color: #3a3a3a;
 }
 
 .left img{
-  width: 40%;
+  width: 45%;
   height: auto;
   margin: 8px 12px 8px 8px;
   max-width: 40vh;
@@ -172,4 +177,47 @@ body{
 .right{
   flex: 1;
   /* border-left: 0.1px solid whitesmoke; */
+  overflow: auto;
+  overflow-x: hidden;
 }
+
+.profile{margin-left: 24px;
+  margin-right: 24px;}
+
+.pro-name{font-size: 24px;
+  font-weight: 700;
+}
+
+.pro-dis{font-size: 18px;
+  text-align: justify;}
+
+
+
+
+
+
+.kara-moji{
+  margin-left: 18px;
+}
+
+.kara-name{
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 36px;
+}
+
+.kara-dis{
+  font-size: 18px;
+}
+
+.kara img{
+  height: auto;
+  margin: 12px;
+}
+ 
+.yoro{margin-left: 24px; margin-right: 24px; text-align: justify;}
+
+.yoro-name{font-size: 24px; font-weight: 700; margin-top: 36px;}
+
+/* 以下footer */
+.myname{text-align: center;}
